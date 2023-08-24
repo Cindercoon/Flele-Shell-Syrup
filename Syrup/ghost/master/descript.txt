@@ -1,0 +1,13 @@
+type,ghost
+name,Main
+sakura.name,flele
+kero.name,none
+shiori,aya5.dll
+icon,img\fle_n.ico
+balloon,for flele
+default.balloon.path,flele_balloon
+info.name.reading,‚Ó‚é‚é
+info.sakura.reading,‚Ó‚é‚é
+craftmanurl,http://navy.nm.land.to/ukgk/flele/
+info.distributionurl,http://navy.nm.land.to/ukgk/flele/
+info.narurl,http://navy.nm.land.to/ukgk/flele/dat/flele.nar

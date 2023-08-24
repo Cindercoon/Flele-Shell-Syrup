@@ -1,0 +1,11 @@
+Replace the "1.dic" file within the master folder with either the "More" or "Less" chatter document, depending on what you want.
+
+MORE CHATTER INCLUDES:
+	Comments on time of day, hourly change, changing shells/ghosts, hiding, random chatter, and head petting.
+
+LESS CHATTER INCLUDES:
+	Comments only on head petting.
+
+___
+HOW TO:
+	Rename whichever file to "1.dic" and replace the current file within the master folder. I'd suggest making a copy of whichever file you want to use before renaming.
