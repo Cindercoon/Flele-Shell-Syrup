@@ -40,9 +40,9 @@ ERASEVAR('○演奏中曲パス')
 --
 □起動
 --
-if ○現在シェル=='Syrup' //This if statement checks if Syrup is the current shell
+if ○現在シェル=='Null' //This if statement checks if Null is the current shell
 	{
-	"\0\s[35]\w5Hiya! I'm Syrup! \s[2120]Nice to meet ya! \s[25]\n\w5I'll sing any song you want! \s[35]\n\w8\w5Just drag and drop a song from a folder onto me! \w8 \e"
+	"\0\s[35]\w5Hiya! I'm Null! \s[2120]Nice to meet ya! \s[25]\n\w5I'll sing any song you want! \s[35]\n\w8\w5Just drag and drop a song from a folder onto me! \w8 \e"
 	}
 else 
 	{
@@ -140,6 +140,10 @@ if dayslot == userbirthday
 		"%(normalboottalk)"
 	}
 	}
+	elseif ○現在シェル=='Riley'	
+	{
+		"%(normalboottalk)"
+	}
 }
 	
 normalboottalk
@@ -194,6 +198,12 @@ if ○現在シェル=='Syrup'
 	}
 	}
 	}
+	elseif ○現在シェル=='Riley'	
+	{
+ 		"\0\s[35] Hey. \s[0]\e"
+ 		"\0\s[1] Hmmm. \w5. \w5. \w5. \w5. \w5. \w5Oh, \s[35] hey.\s[0]\e"	
+		"\0\s[35] I'm Riley Craigmile. \w5I can sing any song you want. \s[35]\n\w8\w5Just drag and drop a song from a folder onto me. \s[0]\w8 \e"
+	}	
 }
 //end time-related announcements
 
@@ -204,7 +214,7 @@ txt = "_" + reference0
 --
 □GhostChanged
 --
-	if ○現在シェル=='Syrup' {
+	if ○現在シェル=='Null' {
 	"\0\s[35]Hiya! \nJust give me a minute. \s[0]\e"
 	}
 	else 
@@ -217,7 +227,7 @@ txt = "_" + reference0
 
 OnMinuteChange
  {
-	if ○現在シェル=='Syrup'
+	if ○現在シェル=='Null'
 	{
 	//----
  	if minute == 0
@@ -394,7 +404,7 @@ OnShellChanged
 {
 ○ヘルプメニュー表示中 = 0
 ○現在シェル = reference0
-if ○現在シェル=='Syrup'
+if ○現在シェル=='Null'
 	{
 	"\1\s[10]\0\s[35]Hey, I remeber you.\n\Interested in some karaoke?\s[0]\e\w9\w9%(○サーフェス)"
 	--
@@ -463,9 +473,13 @@ OnWindowStateRestore {
 // 最小化復元時に曲名ウィンドウもどす
 □曲名ウィンドウONなら表示
 --
-if ○現在シェル=='Syrup'
+if ○現在シェル=='Null'
 {
 "\0\s[35]Oh, there you are.\n\Guess we were playing hide and seek, eh? \w9\w9%(○サーフェス)\e"
+}
+elseif ○現在シェル=='Riley'
+{
+"\0\s[1]Please don't do that. It makes me nauseous.\w9\w9%(○サーフェス)\e"
 }
 else
 {
@@ -526,10 +540,15 @@ if ○曲名ウィンドウON==1 {_i=SAORI("saori\bln.dll", "win01", "", "0", "0", "kyok
 OnClose {
 	□終了前
 --
-if ○現在シェル=='Syrup'
+if ○現在シェル=='Null'
 {
 	"\0\w4\s[0]Let's hang again sometime, eh? \1\s[10]\w9\w5\- \e"
 }
+	elseif ○現在シェル=='Riley Null'
+	{
+	"\0\w4\s[0]I'll catch you later. \1\s[10]\w9\w5\- \e"
+	}	
+
 else
 {
 "\e"
@@ -543,7 +562,7 @@ OnGhostChanging {
 --
 □SAORI終了
 --
-if ○現在シェル=='Syrup'
+if ○現在シェル=='Null'
 {
 	"\0\w4\s[35]Seeing what %reference0's up to? \nI'll check you later. \1\s[10]\w9\w5\e"
 }
@@ -557,7 +576,7 @@ else
 OnVanishSelected {
 	□終了前
 --
-if ○現在シェル=='Syrup'
+if ○現在シェル=='Null'
 {
 	"\0\w4\s[35]See you later.\1\s[10]\w9\w5\e"
 }
@@ -572,10 +591,14 @@ else
 On_終了する { 
 	□終了前
 --
-if ○現在シェル=='Syrup'
+if ○現在シェル=='Null'
 {
 	"\w4\s[35]Let's hang again sometime, eh?\1\s[10]\-\e"
 	}
+	elseif ○現在シェル=='Riley'
+	{
+	"\w4\s[35]I'll catch you later.\1\s[10]\-\e"
+	}	
 	else
 	{
 	"\w4\s[0]\1\s[10]\-\e"
@@ -586,7 +609,7 @@ if ○現在シェル=='Syrup'
 
 OnScreenSaverEnd 
 { 
-if ○現在シェル=='Syrup'
+if ○現在シェル=='Null'
 	{
 	"\w4\s[35]Guess we were playing hide and seek, eh?\w9\w9%(○サーフェス)\e"
 	}
@@ -709,6 +732,14 @@ if ○現在シェル=='Syrup'
 	"\0\s[1]\w5 Whatever. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	"\0\s[1]\w5 What do you want? \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	"\0\s[1]\w5 Hmph \w5 . \w5 . \w5 . \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 Are you going to stop soon? \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 Can you hurry up? \w5 I have things to do. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 Just, \w5don't ruffle my hair up too much. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 I'm not going to transform into a wolf for you, \w5no matter how often you pet me. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"		
+	"\0\s[1]\w5 Alright, \w5 so, \w5 what do you usually do to pass the time? \w5 Something better then this, \w5 I presume. \w5 . \w5 . \w5\w5\w5\w5\w5\w5 Or not. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 I don't know why I keep entertaining you. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 So, \w5what kind of music are you into? \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 Hmmm, \w5what? \w5Oh, the wolf transformation thing? \w5Yeah, \w5me and a few of my friends are werewolves. \w5Not the mindless type you'd see in media, mind you. \w5I just don't want to transform. \w5The clothing issue. \w5. \w5. \w5 thing.\w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	"\0\s[1]\w5 . \w5 . \w5 . \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	}	
 	else

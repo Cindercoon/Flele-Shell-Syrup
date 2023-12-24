@@ -1,0 +1,37 @@
+charset,Shift_JIS
+version,1
+option,DisableNoDefineSurfaces
+
+group,__disabled
+{
+1,__parts
+}
+
+
+//Syrup regular surface
+group,G
+{
+scope,0
+0, basic posing
+1, petted
+6, eyes closed
+25, sing
+50, arms
+}
+
+
+
+//other
+groups, etc.
+{
+10, none
+30, note
+}
+
+group, Kasi
+{
+scope,0
+
+
+
+

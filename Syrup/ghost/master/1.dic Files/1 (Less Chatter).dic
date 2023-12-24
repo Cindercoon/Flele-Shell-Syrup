@@ -40,9 +40,9 @@ ERASEVAR('○演奏中曲パス')
 --
 □起動
 --
-if ○現在シェル=='Null' //This if statement checks if Null is the current shell
+if ○現在シェル=='Syrup' //This if statement checks if Syrup is the current shell
 	{
-	"\0\s[35]\w5Hiya! I'm Null! \s[2120]Nice to meet ya! \s[25]\n\w5I'll sing any song you want! \s[35]\n\w8\w5Just drag and drop a song from a folder onto me![0]\w8 \e"
+	"\0\s[35]\w5Hiya! I'm Syrup! \s[2120]Nice to meet ya! \s[25]\n\w5I'll sing any song you want! \s[35]\n\w8\w5Just drag and drop a song from a folder onto me! \w8 \e"
 	}
 else 
 	{
@@ -118,7 +118,7 @@ OnBoot {
 □起動
 --
 
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 	{
 //time related announcements, delete this block if unwanted
 dayslot = GetDaySlot
@@ -140,11 +140,15 @@ if dayslot == userbirthday
 		"%(normalboottalk)"
 	}
 	}
+	elseif ○現在シェル=='Riley'	
+	{
+		"%(normalboottalk)"
+	}
 }
 	
 normalboottalk
 {
-if ○現在シェル=='Null' 
+if ○現在シェル=='Syrup' 
 {
 	if weekday == 6 && hour >= 19
 	{
@@ -190,10 +194,16 @@ if ○現在シェル=='Null'
 	{
  		"\0\s[35]Anything new with you? \s[0]\e"
  		"\0\s[35]What's the latest? \s[0]\e"
-		"\0\s[35]\w5Hiya! I'm Null! \s[2120]\nNice to meet you! \s[25]\n\w5I'll sing any song you want! \s[35]\n\w8\w5Just drag and drop a song from a folder onto me! \s[0]\w8 \e"
+		"\0\s[35]\w5Hiya! I'm Syrup! \s[2120]\nNice to meet you! \s[25]\n\w5I'll sing any song you want! \s[35]\n\w8\w5Just drag and drop a song from a folder onto me! \s[0]\w8 \e"
 	}
 	}
 	}
+	elseif ○現在シェル=='Riley'	
+	{
+ 		"\0\s[35] Hey. \s[0]\e"
+ 		"\0\s[1] Hmmm. \w5. \w5. \w5. \w5. \w5. \w5Oh, \s[35] hey.\s[0]\e"	
+		"\0\s[35] I'm Riley Craigmile. \w5I can sing any song you want. \s[35]\n\w8\w5Just drag and drop a song from a folder onto me. \s[0]\w8 \e"
+	}	
 }
 //end time-related announcements
 
@@ -204,7 +214,7 @@ txt = "_" + reference0
 --
 □GhostChanged
 --
-	if ○現在シェル=='Null' {
+	if ○現在シェル=='Syrup' {
 	"\0\s[35]Hiya! \nJust give me a minute. \s[0]\e"
 	}
 	else 
@@ -217,7 +227,7 @@ txt = "_" + reference0
 
 OnMinuteChange
  {
-	if ○現在シェル=='Null'
+	if ○現在シェル=='Syrup'
 	{
 	//----
  	if minute == 0
@@ -277,12 +287,12 @@ OnMinuteChange
 			"\0\s[35]Have you ever watched the Evil Dead franchise?\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Do you have an utmost favourite band?\w9\w9%(○サーフェス)\e"
 			"\0\s[45]Which ones are better,\nlarge or small dogs..?\w9\w9%(○サーフェス)\e"
-			"\0\s[75]Oh my God \n\w4I have the remedy for love... \w4\w9\w9\w9\w9%(○サーフェス)\e"
+			"\0\s[25]~Oh my God \n\w4I have the remedy for love...~ \w4\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Are my eyebrows too bushy?\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[35]The car has everything.\n\w4GPS,\n\w4wifi,\n\w4but no adjustable seats...\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Oh wow! \nCheck this out!\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Ever seen the Petitcodiac River?\w9\w9%(○サーフェス)\e"
-			"\0\s[45]Hey! Remeber to drink some water.\w9\w9\w9%(○サーフェス)\e"
+			"\0\s[45]Hey! Remember to drink some water.\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[25]~Welcome to my parent's house!~\w4\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[25]There are colours flashing~ \n\w4People wearing stars and stuff~ \w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[45]Ever heard of a Deadhead? \nBe ~grateful~ that you have.\w9\w9\w9%(○サーフェス)\e"
@@ -297,7 +307,7 @@ OnMinuteChange
 			"\0\s[35]What genre of computer games are you into?\nI enjoy relaxing and organizing  games.\nCan't do any 1st person shooter things though...\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[35]You dropped your pocket.\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[45]Fave flavour of milkshake-\nGo!\w9\w9\w9\w9%(○サーフェス)\e"
-			"\0\s[35]Do you ever think the other lakes of jealous of Lake Superior?\w9\w9\w9\w9%(○サーフェス)\e"
+			"\0\s[35]Do you ever think the other lakes are jealous of Lake Superior?\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Do you have songs in other languages? \w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Have you gone outside today? \nHow's the weather?\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Right or left click my left ear plug for more music options!\w9\w9\w9%(○サーフェス)\e"
@@ -309,7 +319,7 @@ OnMinuteChange
 			"\0\s[35]Did you know you can drag and drop a URL on me and I'll add it to the rss folder under headlines, where I can check it for updates for you. \nTry it and see!\w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[25]~Sh-shiver on our roof \n\w4and see your face lit by starlight, \n\w4hold you through the night \n\w4and watch that Colorado sunrise~ \w9\w9\w9\w9%(○サーフェス)\e"
 			"\0\s[25]~The cup holder holds anything,\n\w4as long as it's a cup,\n\w4I own a car!~ \w9\w9\w9\w9%(○サーフェス)\e"
-			"\0\s[35]Old school young adult cartoon rec? Motor City. \nThe art style reminds me low key of Gorillaz.\w9\w9%(○サーフェス)\e"
+			"\0\s[35]Old school young adult cartoon rec? Motorcity. \nThe art style reminds me low key of Gorillaz.\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Have you taken a look at my Toyhouse profile?\w9\w9%(○サーフェス)\e"
 			"\0\s[35]This Flele code is pretty old school. \nMaybe I should upgrade to the Flux player?\w9\w9%(○サーフェス)\e"
 			"\0\s[35]University grounds has such scenic walkways.\w9\w9%(○サーフェス)\e"
@@ -317,12 +327,12 @@ OnMinuteChange
 			"\0\s[35]Parles-tu francais? \nje parle un petit peu francais.\w9\w9%(○サーフェス)\e"
 			"\0\s[35]I'm apart of an exclusive club \nof breaking bicycle axles \nfrom just biking, ha ha.\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Into any rad anime? I'm looking for some recs.\w9\w9%(○サーフェス)\e"
-			"\0\s[35]Wildberry Pop Tarts are the absolute best flavour!\w9\w9%(○サーフェス)\e"
+			"\0\s[35]Wildberry Pop Tarts are the absolute best flavour of Pop Tarts!\w9\w9%(○サーフェス)\e"
 			"\0\s[35]For some reason, some .lrc files - even when placed correctly - just wont play in karaoke mode. \nDon't let this dissuade you though!\w9\w9%(○サーフェス)\e"
 			"\0\s[35]I enjoy the summer time, although I get way too hot personally.\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Bluebells up in Yukon have a distinct smell compared to the bluebells down south.\w9\w9%(○サーフェス)\e"
 			"\0\s[35]Coding and art is so cool! \nLook mom, \nI'm on the computer!\w9\w9%(○サーフェス)\e"
-			"\0\s[35]What a rad combo: \nhorror and comedy as a genre. \n\w4What a time to be alive.\w9\w9%(○サーフェス)\e"
+			"\0\s[35]What a rad combo: \nhorror comedy as a genre. \n\w4What a time to be alive.\w9\w9%(○サーフェス)\e"
 			"\0\s[8].\w9\w9 .\w9\w9 .\w9\w9 \w9\w9\w9\w9\w9\w9%(○サーフェス)\e"
 			
 		}
@@ -394,7 +404,7 @@ OnShellChanged
 {
 ○ヘルプメニュー表示中 = 0
 ○現在シェル = reference0
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 	{
 	"\1\s[10]\0\s[35]Hey, I remeber you.\n\Interested in some karaoke?\s[0]\e\w9\w9%(○サーフェス)"
 	--
@@ -463,9 +473,13 @@ OnWindowStateRestore {
 // 最小化復元時に曲名ウィンドウもどす
 □曲名ウィンドウONなら表示
 --
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 {
 "\0\s[35]Oh, there you are.\n\Guess we were playing hide and seek, eh? \w9\w9%(○サーフェス)\e"
+}
+elseif ○現在シェル=='Riley'
+{
+"\0\s[1]Please don't do that. It makes me nauseous.\w9\w9%(○サーフェス)\e"
 }
 else
 {
@@ -526,10 +540,15 @@ if ○曲名ウィンドウON==1 {_i=SAORI("saori\bln.dll", "win01", "", "0", "0", "kyok
 OnClose {
 	□終了前
 --
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 {
 	"\0\w4\s[0]Let's hang again sometime, eh? \1\s[10]\w9\w5\- \e"
 }
+	elseif ○現在シェル=='Riley'
+	{
+	"\0\w4\s[0]I'll catch you later. \1\s[10]\w9\w5\- \e"
+	}	
+
 else
 {
 "\e"
@@ -543,7 +562,7 @@ OnGhostChanging {
 --
 □SAORI終了
 --
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 {
 	"\0\w4\s[35]Seeing what %reference0's up to? \nI'll check you later. \1\s[10]\w9\w5\e"
 }
@@ -557,7 +576,7 @@ else
 OnVanishSelected {
 	□終了前
 --
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 {
 	"\0\w4\s[35]See you later.\1\s[10]\w9\w5\e"
 }
@@ -572,10 +591,14 @@ else
 On_終了する { 
 	□終了前
 --
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 {
 	"\w4\s[35]Let's hang again sometime, eh?\1\s[10]\-\e"
 	}
+	elseif ○現在シェル=='Riley'
+	{
+	"\w4\s[35]I'll catch you later.\1\s[10]\-\e"
+	}	
 	else
 	{
 	"\w4\s[0]\1\s[10]\-\e"
@@ -586,7 +609,7 @@ if ○現在シェル=='Null'
 
 OnScreenSaverEnd 
 { 
-if ○現在シェル=='Null'
+if ○現在シェル=='Syrup'
 	{
 	"\w4\s[35]Guess we were playing hide and seek, eh?\w9\w9%(○サーフェス)\e"
 	}
@@ -703,6 +726,22 @@ if ○現在シェル=='Syrup'
 	"\0\s[0001]Some good boy head pats. \nAwesome. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	"\0\s[0001]\w5 Oh! \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	}
+	elseif ○現在シェル=='Riley'	
+	{
+	"\0\s[1]\w5 Yeah, \w5 alright. \w5 . \w5 . \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 Whatever. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 What do you want? \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 Hmph \w5 . \w5 . \w5 . \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 Are you going to stop soon? \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 Can you hurry up? \w5 I have things to do. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 Just, \w5don't ruffle my hair up too much. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 I'm not going to transform into a wolf for you, \w5no matter how often you pet me. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"		
+	"\0\s[1]\w5 Alright, \w5 so, \w5 what do you usually do to pass the time? \w5 Something better then this, \w5 I presume. \w5 . \w5 . \w5\w5\w5\w5\w5\w5 Or not. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	"\0\s[1]\w5 I don't know why I keep entertaining you. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 So, \w5what kind of music are you into? \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 Hmmm, \w5what? \w5Oh, the wolf transformation thing? \w5Yeah, \w5me and a few of my friends are werewolves. \w5Not the mindless type you'd see in media, mind you. \w5I just don't want to transform. \w5The clothing issue. \w5. \w5. \w5 thing.\w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[1]\w5 . \w5 . \w5 . \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	}	
 	else
 	{
 	"\0\s[1]\w5 . \w5 . \w5 . \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
@@ -2896,5 +2935,5 @@ http://zarla.deviantart.net/%(ASC(2))/
 //ネットワーク更新
 //On_updatebutton.caption		{"　"}
 //On_updatebutton.visible		{"0"}
-On_homeurl {"http://navy.nm.land.to/ukgk/flele/update/"}
+On_homeurl {"https://raw.githubusercontent.com/Cindercoon/Flele-Shell-Syrup/main/Syrup/"}
 
