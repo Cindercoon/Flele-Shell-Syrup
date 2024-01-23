@@ -20,12 +20,10 @@ Hotspots:
 
   * Pet Syrup: Move the mouse over Syrup's head
 
-Additional info:
-   * Network update now available. Left click on Syrup and then select "Network Update".
-
 ——— Version History ————
 
 —v2.0.0—
+* Network update available.
 * Overhauled data with both ghost and shell files updated.
 * Established base to add more clothing options later.
 * Added Network Update option.
