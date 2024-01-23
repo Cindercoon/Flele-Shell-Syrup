@@ -29,6 +29,3 @@ Additional info:
 * Established base to add more clothing options later.
 * Added Network Update option.
 * Added extra character dialogue.
-
-—v1.0.0—
-* Initial release.
