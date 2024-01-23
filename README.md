@@ -18,10 +18,10 @@ Hotspots:
    * Song Bar: Double-click his right ear plug
    * Clear Playlist: Double-click on mouth
 
-   8 Pet Syrup: Move the mouse over Syrup's head
+  * Pet Syrup: Move the mouse over Syrup's head
 
 Additional info:
-   8 Network update now available. Left click on Syrup and then select "Network Update".
+   * Network update now available. Left click on Syrup and then select "Network Update".
 
 ——— Version History ————
 —v2.0.0—
