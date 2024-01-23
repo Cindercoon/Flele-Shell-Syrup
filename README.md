@@ -23,7 +23,6 @@ Hotspots:
 ——— Version History ————
 
 —v2.0.0—
-* Network update available.
 * Overhauled data with both ghost and shell files updated.
 * Established base to add more clothing options later.
 * Added Network Update option.
