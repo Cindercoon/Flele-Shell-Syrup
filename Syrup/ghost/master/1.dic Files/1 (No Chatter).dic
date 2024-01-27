@@ -40,7 +40,7 @@ ERASEVAR('○演奏中曲パス')
 --
 □起動
 --
-if ○現在シェル=='Null' //This if statement checks if Syrup is the current shell
+if ○現在シェル=='Casual' //This if statement checks if Syrup is the current shell
 	{
 	"\0\s[35]\w5Hiya! I'm Syrup! \s[2120]Nice to meet ya! \s[25]\n\w5I'll sing any song you want! \s[35]\n\w8\w5Just drag and drop a song from a folder onto me! \w8 \e"
 	}
@@ -118,7 +118,7 @@ OnBoot {
 □起動
 --
 
-if ○現在シェル=='Casual'
+if ○現在シェル=='Null'
 	{
 //time related announcements, delete this block if unwanted
 dayslot = GetDaySlot
@@ -144,7 +144,7 @@ if dayslot == userbirthday
 	
 normalboottalk
 {
-if ○現在シェル=='Casual' 
+if ○現在シェル=='Null' 
 {
 	if weekday == 6 && hour >= 19
 	{
@@ -396,12 +396,20 @@ OnShellChanged
 ○現在シェル = reference0
 if ○現在シェル=='Null'
 	{
-	"\1\s[10]\0\s[35]Hey, I remeber you.\n\Interested in some karaoke?\s[0]\e\w9\w9%(○サーフェス)"
+	"\1\s[10]\0\s[35]These clothes are pretty comfy.\n\Interested in some karaoke?\s[0]\e\w9\w9%(○サーフェス)"
 	--
 	□タスクトレイアイコン指定
 
 	"\e"
 	}
+elseif ○現在シェル=='MissingNo.'
+	{
+	"\1\s[10]\0\s[35]Oh, haha.\n\Well\w5 . \w5 . \w5 . \s[0]\e\w9\w9%(○サーフェス)"
+	--
+	□タスクトレイアイコン指定
+
+	"\e"
+	}	
 	else
 	{
 	"\0%(○サーフェス)\1\s[10]"
@@ -692,7 +700,7 @@ OnMouseMove
 //note, the %(○サーフェス)\b[-1] tag is to return the flele to the default pose and get rid of the balloon afterwards, presumably since flele doesn't have the return to default surfacecheck function most ghosts do after a set amount of time
 □撫で反応 
 {
-if ○現在シェル=='Casual'
+if ○現在シェル=='Null'
 	{
 	"\0\s[0001]\w5 . \w5 . \w5 ! \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	"\0\s[0001]\w5 A little to the left... \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
@@ -703,6 +711,20 @@ if ○現在シェル=='Casual'
 	"\0\s[0001]Some good boy head pats. \nAwesome. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	"\0\s[0001]\w5 Oh! \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
 	}
+elseif ○現在シェル=='MissingNo.'
+	{
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Could I get changed into something more apporpriate?\w5 Thanks. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+	"\0\s[0001]\w5 Is there a reson why you're not allowing me to change?\w5 I keep asking. \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"	
+	}	
 	else
 	{
 	"\0\s[1]\w5 . \w5 . \w5 . \w9\w9\w9\w9\w9\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
@@ -2695,7 +2717,7 @@ OnUpdate.OnDownloadBegin
 }
 
 OnUpdateComplete {
-	if reference0 == "none" {"\0\s[0]%(reference3) notihng new it seems. Cool, you're up-to-date then!\w9\w9\w9\w9%(○サーフェス)\e"}
+	if reference0 == "none" {"\0\s[0]Nothihng new it seems. Cool, you're up-to-date then!\w9\w9\w9\w9%(○サーフェス)\e"}
 	else {
 	"\0\s[0]%(reference3) update complete\w9\w9\w9\w9%(○サーフェス)\e"
 	}
@@ -2703,7 +2725,7 @@ OnUpdateComplete {
 
 OnUpdateFailure{
 
-"\0\s[6]%(reference3) network error. You can always redownload the files directly from the site though. Check back later?\w9\w9\w9\w9%(○サーフェス)\b[-1]\e"
+"\0\s[6]Something's wrong\w7.\w7.\w7.\nYou can always manually install new files.\nRight click me. The tab under \ULink\U\ will have the url.\w9\w9\w9\w9\e"
 
 }
 
@@ -2721,7 +2743,7 @@ if Reference0 != ○サーフェス {"\0%(○サーフェス)\e"}
 /////////////////////////////////////////////////////////////////
 
 □EventBegin {
-"\0\s[6]waiting\w7.\w7.\w7.\e"
+"\0\s[6]Hold on a sec\w7.\w7.\w7.\e"
 --
 □ヘルプメニュー消滅した
 }
@@ -2880,11 +2902,14 @@ On_readmebutton.caption		{"FLELE Readme(&G)"}
 //リンク
 On_sakura.recommendsites {"/
 
-SSP%(ASC(1))/
-http://ssp.shillest.net/%(ASC(2))/
+Manual update%(ASC(1))/
+https://ko-fi.com/s/be4508751d%(ASC(2))/
+
+Ghost bug report%(ASC(1))/
+mailto:cindercoonbusiness@gmail.com%(ASC(2))/
 
 FLELE translated by%(ASC(1))/
-http://zarla.deviantart.net/%(ASC(2))/
+https://www.deviantart.com/zarla/%(ASC(2))/
 "}
 
 //ネットワーク更新

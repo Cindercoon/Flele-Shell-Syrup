@@ -2717,7 +2717,7 @@ OnUpdate.OnDownloadBegin
 }
 
 OnUpdateComplete {
-	if reference0 == "none" {"\0\s[0]Notihng new it seems. Cool, you're up-to-date then!\w9\w9\w9\w9%(○サーフェス)\e"}
+	if reference0 == "none" {"\0\s[0]Nothihng new it seems. Cool, you're up-to-date then!\w9\w9\w9\w9%(○サーフェス)\e"}
 	else {
 	"\0\s[0]%(reference3) update complete\w9\w9\w9\w9%(○サーフェス)\e"
 	}
