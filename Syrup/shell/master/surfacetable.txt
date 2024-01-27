@@ -16,7 +16,6 @@ scope,0
 1, petted
 6, eyes closed
 25, sing
-50, arms
 }
 
 

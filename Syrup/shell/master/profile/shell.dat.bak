@@ -1,14 +1,14 @@
 Charset,UTF-8
 __system_settings_version__,2
 char0.bind.savearray,901=1
-balloon,X:\Documents\Desktop Buddies [Shimeji.Flele.Otaku Mascot]\Flele\Flele\balloon\flele_balloon_no_tail\
+balloon,X:\Documents\Desktop Buddies [Shimeji.Flele.Otaku Mascot]\Flele\Flele\balloon\flele_balloon_wide_no_tail\
 Char1.balloon.isleft,1
 balloon0.offset,149.-56
 Char0.centery,1040
 balloon1.offset,0.0
 Char0.balloon.isleft,0
-Char.VirtualDesktop,471b2507-fa58-40a7-9e39-04fea0dd01a8
-Char0.center,1394
+Char.VirtualDesktop,c6852aa6-3453-4380-a1b8-292fdbfdb07a
+Char0.center,1567
 Char1.centery,1040
 Char1.center,1669
 char1.bind.savearray,900=1

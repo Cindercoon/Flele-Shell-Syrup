@@ -1,110 +1,111 @@
+Translated from Japanese to English via Google Translate
 
-　　　　　　　　　FLELE　取り扱い説明書
+FLELE instruction manual
 
 
-　　　　　　　　: 　　基本的な操作法 　　:
+: Basic operation:
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-・こちらで配布されているソフト、「SSP」の「現在のフルセット」
-で正常に動作します。
+ｷ"Current full set" of the software distributed here, "SSP"
+It works fine.
 http://ssp.shillest.net/
 
-・以下の説明の< mouse >項目はマウス操作、<　key　>はキー
-操作です（これは[コンフィグ]より変更可能です）。
-FLELEがアクティブになっている時は<　key　>で指定されたキー
-を押すだけで実行されます。
-インアクティブの時は「Shift + Ctrl」と共に押してください。
+ｷIn the explanation below, <mouse> is a mouse operation, and <key> is a key.
+This is an operation (this can be changed from [Config]).
+When FLELE is active, the key specified by <key>
+Just press .
+When inactive, press "Shift + Ctrl".
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-□ 曲リストに曲を追加
-< mouse > サウンドファイルをFLELEにドロップ。
-複数のファイルを選択してまとめてドロップしたり、フォルダごとドロップ、m3u形式の曲リストファイルをドロップして追加する事もできます。
+? Add songs to song list
+< mouse > Drop the sound file into FLELE.
+You can select multiple files and drop them all at once, drop an entire folder, or drop an m3u format song list file to add.
 
-□ 曲リストに曲をダウンロードして追加
-< mouse > ウェブ上のサウンドファイルのリンクをFLELEにドロップ。
-またはヘルプメニューの"URL入力DL"からURLを直接入力。
+? Download and add songs to your song list
+< mouse > Drop a link of a sound file from the web into FLELE.
+Or enter the URL directly from "URL input DL" in the help menu.
 
-曲データをダウンロードして曲リストに追加します。
-ダウンロードしたファイルはsound_fileフォルダの中にあります。
-これは一時的なもので曲リストクリアと同時に削除されます。
-削除したくないファイルは別な場所にコピーしておいてください。
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-□ サウンド再生
-< mouse > 胸ボタンクリック
-<　key　> R
-曲リストの中から曲を選び再生します。
-もう一度押すと再び選び直して再生します。
-選び方はその時設定している再生法によって違います。
-
-□ サウンド再生一時停止/解除
-< mouse > 髪留めクリック
-<　key　> S
-演奏中の曲を一時停止します。
-もう一度押すと停止した所から再生します。
-（oggも一時停止させたい場合ヘルプメニューから設定を変更し
-てください）
+Download song data and add it to the song list.
+The downloaded file is located in the sound_file folder.
+This is temporary and will be deleted when the song list is cleared.
+Copy any files you do not want to delete to another location.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-□ ヘルプメニューを出す/閉じる
-< mouse > FLELEの体(右手・足・胸・髪留め以外)をダブルクリック
-<　key　> M
-ヘルプメニューを表示します。もう一度押すと閉じます。
+? Sound playback
+< mouse > Chest button click
+< key > R
+Select and play a song from the song list.
+If you press it again, it will be selected again and played.
+The selection method differs depending on the playback method set at the time.
 
-□ 曲リストを出す
-< mouse > FLELEが左手に持っているファイルを右クリック
-曲リストメニューを表示します。
-
-□ 曲名ウィンドウを出す/閉じる
-< mouse > 右手のグローブダブルクリック
-<　key　> W
-演奏中曲名案内ウィンドウを表示します。もう一度押すと閉じます。
-
-□ 曲リストを全てクリア
-< mouse > 靴ダブルクリック
-<　key　> C
+? Pause/cancel sound playback
+< mouse > Click on hair clip
+< key >S
+Pause the currently playing song.
+Pressing it again will resume playback from where it stopped.
+(If you want to pause ogg as well, change the settings from the help menu.
+please)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-□ 終了する
-< mouse > 右クリックメニュー > 終了
-<　key　> E
+? Show/close help menu
+< mouse > Double-click on FLELE's body (other than right hand, foot, chest, and hair clip)
+< key > M
+Display the help menu. Press again to close.
 
-□ 外見変更
-< mouse > 右クリックメニュー > シェル
-FLELEの外見を変更します。（音楽プレイヤーで言うスキンのようなものです）
-同梱されてないシェルはFLELE配布サイトからダウンロードできます。
-シェルによってクリック箇所が変わる場合があるのでご注意ください。
+? Display song list
+< mouse > Right click on the file that FLELE is holding in his left hand
+Displays the song list menu.
+
+? Show/close song title window
+< mouse > Right glove double click
+< key > W
+Displays the currently playing song title information window. Press again to close.
+
+? Clear all song list
+< mouse > Shoes double click
+< key >C
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-　　　　　　　　　: 　　注意事項 　　:
+? Exit
+< mouse > right-click menu > exit
+< key >E
+
+? Appearance change
+< mouse > right-click menu > shell
+Change the appearance of FLELE. (It's like a skin on a music player)
+Shells that are not included can be downloaded from the FLELE distribution site.
+Please note that the click location may change depending on the shell.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-・環境によって再生できない場合もあります。
-現在わかっている事例は以下です。
+         :   Notes   :
 
-　○ Windows98でmp3が再生できない
-　○ WindowsNTでwmaが再生できない
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- Depending on the environment, playback may not be possible.
+Below are the currently known cases.
+
+ ? MP3 cannot be played on Windows98
+ ? WMA cannot be played on Windows NT
 
 http://cowscorpion.com/dl/ffdshow.html
-こちらの最新版のffdshowをインストールすると聞こえるようになるかもしれません。
+You may be able to hear it if you install the latest version of ffdshow.
 
-・もし動作がおかしくなった時は一旦終了し、 ghost>master フォル
-ダ内のAYA5_variable.cfgとprofileフォルダを削除してみてください。
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-　　　　　　　　: 　　ほかいろいろ 　　:
+ｷIf something goes wrong, close it once and save it to the ghost>master folder.
+Try deleting AYA5_variable.cfg and profile folder in the folder.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-・右クリックメニューから「ネットワーク更新」をかけると最新版になります。
-不具合が直ったり機能が増えたりするかもしれません。
+: : : : :
 
-・SSPの設定で「常に手前に表示」にしておくのをお勧めします。
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+-Click "Network Update" from the right-click menu to get the latest version.
+Bugs may be fixed or features may be added.
+
+ｷWe recommend that you set the SSP to "Always display on top".

@@ -1,5 +1,5 @@
 type,ghost
-name,Secondary
-directory,flele_aya
+name,Syrup
+directory,Syrup
 balloon.directory,flele_balloon
 refresh,0

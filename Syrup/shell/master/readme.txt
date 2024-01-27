@@ -18,9 +18,10 @@ Hotspots:
 
    • Pet Syrup: Move the mouse over Syrup's head
 
-
 ——— Version History ————
 
-—v1.0.0—
-
-• Initial release
+—v2.0.0—
+• Overhauled data with both ghost and shell files updated.
+• Established base to add more clothing options later.
+• Added Network Update option.
+• Added extra character dialogue.

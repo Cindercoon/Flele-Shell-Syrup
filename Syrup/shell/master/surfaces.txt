@@ -195,10 +195,6 @@ collision6,69, 85, 208, 145,stroke_p
 surface0,surface1,surface6,surface25
 {
 
-
-//clothes-basic
-animation901.interval,bind
-animation901.pattern0,add,9600,0,0,0
 }
 
 

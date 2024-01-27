@@ -1,6 +1,6 @@
 charset,Shift_JIS
 type,shell
-name,Syrup
+name,Casual
 seriko.alignmenttodesktop,free
 sakura.balloon.offsetx,40
 sakura.balloon.offsety,14
@@ -30,6 +30,3 @@ menu.disable.font.color.b,180
 menu.separator.color.r,255
 menu.separator.color.g,255
 menu.separator.color.b,255
-
-
-sakura.bindgroup901.name,Clothes,Basic
