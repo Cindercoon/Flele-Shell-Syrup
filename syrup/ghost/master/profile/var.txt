@@ -1,0 +1,10 @@
+Charset,UTF-8
+install,742469100
+homeurl_found,1
+surfacecount,31
+homeurl,https://raw.githubusercontent.com/Cindercoon/Flele-Shell-Syrup/main/Syrup/
+update_result,OK(0)
+firstboot,742469100
+update_time,802070577
+commitmemorysize,845410
+lastboot,802167971
